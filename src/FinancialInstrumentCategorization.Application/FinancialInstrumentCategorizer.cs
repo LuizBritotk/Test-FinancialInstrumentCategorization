@@ -19,6 +19,7 @@ namespace FinancialInstrumentCategorization.Application
             if (instrument == null)
                 throw new ArgumentNullException(nameof(instrument), "The financial instrument cannot be null.");
 
+
             EnsureNonNegativeMarketValue(instrument.MarketValue);
         }
 
